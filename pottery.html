@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title> 陶藝</title>
+
+</head>
+
+<body>
+    
+
+ <div id="wrapper">
+
+    <center><img src="END-03.png" width="20%"></center>
+
+    </div>
+
+   <link rel="stylesheet"href="pottery.css"media="screen"/>
+    <!-- 浮動圖片超連結，點擊後跳轉到 https://example.com -->
+        <a href="index.html" id="floating-link">
+    <!-- 圖片資源，請將 "your-image.jpg" 替換為你的圖片路徑 -->
+         <img src="logo.png" alt="Floating Link">
+            </a>
+
+
+    <div class="container">
+        <!-- 每個grid-item代表一個圖片項 -->
+        <div class="grid-item">
+            <a href="#link1">
+                <!-- 圖片和描述文字 -->
+                <img src="pottery1.png" alt="描述一">
+                <!-- 鼠標懸停時顯示的註解文字 -->
+                <span class="tooltip">三上下陶藝選修期末茶具套組（參加期末陶藝成果展）</span>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="#link2">
+                <img src="pottery1-05.png" alt="描述2">
+                <span class="tooltip">二下期末拉胚練習作業</span>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="#link3">
+                <img src="pottery1-06.png" alt="描述3">
+                <span class="tooltip">三上選修期中作業</span>
+            </a>
+        </div>
+         <div class="grid-item">
+            <a href="#link3">
+                <img src="pottery1-09.png" alt="描述3">
+                <span class="tooltip">二下必修陶藝期末作業（參展校內圖書館常設展、校內四系聯展）</span>
+            </a>
+        </div>
+         <div class="grid-item">
+            <a href="#link3">
+                <img src="pottery1-11.png" alt="描述3">
+                <span class="tooltip">三上選修陶藝手捏功課</span>
+            </a>
+        </div>
+         <div class="grid-item">
+            <a href="#link3">
+                <img src="pottery1-14.png" alt="描述3">
+                <span class="tooltip">2023系展作品（參展系展）</span>
+            </a>
+        </div>
+        
+       
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // 當用戶滾動到一定距離時顯示按鈕
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        }
+
+        // 點擊按鈕滾動到頁面頂部
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+        <!-- 可以添加更多的grid-item來放置更多的圖片 -->
+    </div>
+
+
+
+</body>
+
+</html>

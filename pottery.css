@@ -1,0 +1,90 @@
+/* 為浮動連結設置樣式 */
+#floating-link {
+    position: fixed; /* 固定定位，確保元素相對於視窗固定 */
+    bottom: -15px; /* 距離視窗底部20像素，你可以根據需要調整 */
+    left: -15px;  /* 距離視窗右側20像素，你可以根據需要調整 */
+    z-index: 1000; /* 設置較高的層級，確保浮動圖片在其他元素之上 */
+}
+
+/* 為浮動連結內的圖片設置樣式 */
+#floating-link img {
+    width: 250px;  /* 設置圖片寬度為50像素，你可以根據需要調整 */
+    height: 250px; /* 設置圖片高度為50像素，你可以根據需要調整 */
+    transition: transform 0.3s; /* 設置過渡效果，使變換更加平滑 */
+}
+
+/* 當滑鼠懸停在圖片上時的效果 */
+#floating-link img:hover {
+    transform: scale(1.5); /* 當滑鼠懸停時，圖片放大1.1倍 */
+}
+#wrapper{
+    padding: 50px;
+}
+
+/* 設置整體頁面的字體和背景色 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 設置容器的網格布局 */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* 自適應列數，最小寬度300px */
+    gap: 16px; /* 每個項目之間的間隙 */
+    padding: 16px; /* 容器的內邊距 */
+}
+
+/* 設置每個網格項目的位置和溢出處理 */
+.grid-item {
+    position: relative; /* 為了能夠定位內部的註解文字 */
+    overflow: hidden; /* 隱藏溢出的部分 */
+}
+
+/* 設置圖片的寬度和高度 */
+.grid-item img {
+    width: 100%; /* 圖片寬度設為100%，以適應父容器 */
+    height: auto; /* 高度自動調整 */
+    display: block; /* 消除圖片底部的空白間隙 */
+}
+
+/* 設置註解文字的位置和樣式 */
+.grid-item .tooltip {
+    position: absolute; /* 絕對定位 */
+    bottom: 8px; /* 距離底部8px */
+    left: 8px; /* 距離左側8px */
+    background-color: #81BCD5; /* 半透明的黑色背景 */
+    color: #fff; /* 白色文字 */
+    padding: 4px 8px; /* 內邊距 */
+    border-radius: 4px; /* 圓角邊框 */
+    display: none; /* 默認隱藏 */
+}
+
+/* 當鼠標懸停在鏈接上時顯示註解文字 */
+.grid-item a:hover .tooltip {
+    display: block; /* 顯示註解文字 */
+}
+
+#back-to-top {
+            display: none; /* 起初隱藏按鈕 */
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        #back-to-top:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+

@@ -1,0 +1,33 @@
+/* 為浮動連結設置樣式 */
+#floating-link {
+    position: fixed; /* 固定定位，確保元素相對於視窗固定 */
+    bottom: -15px; /* 距離視窗底部20像素，你可以根據需要調整 */
+    left: -15px;  /* 距離視窗右側20像素，你可以根據需要調整 */
+    z-index: 1000; /* 設置較高的層級，確保浮動圖片在其他元素之上 */
+}
+
+/* 為浮動連結內的圖片設置樣式 */
+#floating-link img {
+    width: 250px;  /* 設置圖片寬度為50像素，你可以根據需要調整 */
+    height: 250px; /* 設置圖片高度為50像素，你可以根據需要調整 */
+    transition: transform 0.3s; /* 設置過渡效果，使變換更加平滑 */
+}
+
+/* 當滑鼠懸停在圖片上時的效果 */
+#floating-link img:hover {
+    transform: scale(1.5); /* 當滑鼠懸停時，圖片放大1.1倍 */
+}
+
+#wrapper{
+    padding: 50px;
+}
+
+
+
+/* 設置整體頁面的字體和背景色 */
+body {
+    font-family: Arial, sans-serif;
+    
+    margin: 0;
+    padding:50;
+}

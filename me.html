@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title> 陶藝</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+    <center><img src="ABOUT ME.png" width="20%"></center>
+
+    </div>
+   <link rel="stylesheet"href="me.css"media="screen"/>
+    <!-- 浮動圖片超連結，點擊後跳轉到 https://example.com -->
+        <a href="index.html" id="floating-link">
+    <!-- 圖片資源，請將 "your-image.jpg" 替換為你的圖片路徑 -->
+         <img src="logo.png" alt="Floating Link">
+            </a>
+
+            
+            <img src="me-09.png"width="100%">
+            <img src="me-06.png"width="100%">
+            <img src="me-07.png"width="100%">
+            <img src="me-08.png"width="100%">
+           
+
+         <button id="back-to-top" onclick="scrollToTop()"> ↑ </button>
+
+    <script>
+        // 當用戶滾動到一定距離時顯示按鈕
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        }
+
+        // 點擊按鈕滾動到頁面頂部
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>
